@@ -1,0 +1,8 @@
+Date,Sample ID,KD (nM),Notes,Operator,Temperature,Buffer
+1/15/23,AB-123,0.45,Good measurement,JS,25C,PBS
+1/15/23,AB-124,n.b.,Poor fit - repeat,JS,25C,PBS
+1/16/23,AB-125,0.89,OK,ML,RT,PBS
+1/16/23,AB-126,0.67,,ML,room temp,PBS
+1/17/23,AB-123,0.48,Repeat measurement,KP,25,PBS
+2/1/23,AB-127,<0.1,Below detection limit,JS,25°C,PBS
+2/2/23,AB-128,1.2,High background,JS,25°C,PBS
