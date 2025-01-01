@@ -28,16 +28,19 @@ class AntibodyDataProcessor:
         """
 
         def clean_name(col):
-            # Remove units in parentheses or after _
-            col = re.sub(r'\([^)]*\)', '', col)
-            col = re.sub(r'_[^_]*/', '_', col)
-            # Remove special characters and standardize separators
-            col = re.sub(r'[^a-zA-Z0-9_]', '_', col)
-            # Remove duplicate underscores
-            col = re.sub(r'_+', '_', col)
-            # Remove trailing underscores
-            col = col.strip('_').lower()
-            return f"{prefix}{col}" if prefix else col
+            if col != 'antibody_id':
+                # Remove units in parentheses or after _
+                col = re.sub(r'\([^)]*\)', '', col)
+                col = re.sub(r'_[^_]*/', '_', col)
+                # Remove special characters and standardize separators
+                col = re.sub(r'[^a-zA-Z0-9_]', '_', col)
+                # Remove duplicate underscores
+                col = re.sub(r'_+', '_', col)
+                # Remove trailing underscores
+                col = col.strip('_').lower()
+                return f"{prefix}{col}" if prefix else col
+            else:
+                return col
 
         return df.rename(columns=lambda x: clean_name(x))
 
@@ -73,12 +76,12 @@ class AntibodyDataProcessor:
     def _standardize_antibody_ids(self):
         """Standardize antibody IDs across all datasets."""
         id_columns = {
-            'aSEC': 'ID',
+            'asec': 'ID',
             'binding_affinity': 'Sample_ID',
             'bioactivity': 'Sample_ID',
             'charge_variants': 'SampleName',
             'endotoxin': 'ID',
-            'expression_yields': 'Sample',
+            'expression_yields': 'Antibody_ID',
             'glycan_profiling': 'Ab_ID',
             'sequences': 'Antibody_ID',
             'stability_timecourse': 'AntibodyName',
@@ -154,7 +157,7 @@ class AntibodyDataProcessor:
 
 def main():
     # Initialize processor
-    processor = AntibodyDataProcessor('./data')
+    processor = AntibodyDataProcessor('../data')
 
     # Load and process data
     processor.load_data()
@@ -174,6 +177,5 @@ def main():
     print("\nFeature names:")
     print(ml_ready_df.columns.tolist())
 
-
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()
