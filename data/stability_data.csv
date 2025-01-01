@@ -1,7 +1,0 @@
-Sample,Tm1,Tm2,Comments,Date Tested,pH,Buffer Composition
-AB-123,68.5,82.3,Clear transition,2023-01-20,7.4,PBS
-AB-124,65.2,78.9,Noisy data,2023-01-20,7.4,PBS
-AB-125,71.1,85.4,,2023-01-21,7.4,PBS
-AB-126,67.8,81.5,Some aggregation,2023-01-21,7.4,PBS
-AB-127,72.3,86.7,Good quality,2023-02-05,7.4,PBS
-AB-128,64.5,77.8,Multiple transitions?,2023-02-05,7.4,PBS

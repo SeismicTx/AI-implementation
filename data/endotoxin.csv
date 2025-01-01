@@ -1,0 +1,6 @@
+ID,Endotoxin_EU/mg,Test_Method,Sample_Conc_mg/mL,Dilution,Result,Analyst
+MAB_001,<0.1,LAL,10,1:10,PASS,JD
+mab-2,0.15,LAL,10,1:10,PASS,JD
+antibody3,>1.0,LAL,10,1:10,FAIL,RK
+Ab_04,<0.1,LAL,10,1:10,PASS,RK
+mAB-5,0.08,LAL,10,1:10,PASS,JD

@@ -1,0 +1,6 @@
+AntibodyID,Tm1_celsius,Tm2_C,Tagg,dG,Comments
+MAB_001,68.5,82.3,75.2,-12.4,Clean transition
+mAb2,67.8,81.9,74.8,-11.9,
+ab-3,N/A,82.1,75.0,-12.1,First transition unclear
+Antibody_04,68.2,N/A,74.9,-12.2,Second domain unstable
+mAb-005,68.7,82.5,75.4,-12.6,Multiple runs averaged
