@@ -73,7 +73,7 @@ class AntibodyDataProcessor:
     def _standardize_antibody_ids(self):
         """Standardize antibody IDs across all datasets."""
         id_columns = {
-            'asec': 'ID',
+            'aSEC': 'ID',
             'binding_affinity': 'Sample_ID',
             'bioactivity': 'Sample_ID',
             'charge_variants': 'SampleName',

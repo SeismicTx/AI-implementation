@@ -1,6 +1,6 @@
-Sample,Expression_mg/L,Cell_line,Duration_days,Viability%,Process,Comments
-mAb1,452,CHO-K1,14,95,Fed-batch,Standard process
-MAB-02,389,CHO-K1,14,92,Fed-batch,Low producer
-Antibody_3,521,CHO-S,14,94,Fed-batch,High producer
-ab_4,N/A,CHO-K1,14,88,Fed-batch,Failed run
-mAb-005,478,CHO-S,14,93,Fed-batch,Average yield
+Antibody_ID,Titer_mg/L,Viability_pct,Culture_days,Cell_line
+MAB001,850,95,14,CHO-K1
+MAB002,780,93,14,CHO-K1
+MAB003,920,94,14,CHO-K1
+MAB004,800,92,14,CHO-K1
+MAB005,870,95,14,CHO-K1
