@@ -1,0 +1,27 @@
+aws:
+  access_key: YOUR_ACCESS_KEY
+  secret_key: YOUR_SECRET_KEY
+  region: us-west-2
+  data_lake_bucket: your-data-lake-bucket
+
+redshift:
+  host: your-redshift-cluster.region.redshift.amazonaws.com
+  port: 5439
+  database: antibody_data
+  user: your_user
+  password: your_password
+
+schema_version: "1.0"
+
+schema_mapping:
+  binding_affinity:
+    column_mapping:
+      "Sample ID": "antibody_id"
+      "KD (nM)": "kd_nm"
+    data_types:
+      antibody_id: string
+      kd_nm: float
+    validation_rules:
+      kd_nm:
+        range: [0, 1000]
+  # Add mappings for other sheet types
