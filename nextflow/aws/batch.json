@@ -1,0 +1,23 @@
+{
+    "jobDefinitionName": "antibody-pipeline",
+    "type": "container",
+    "containerProperties": {
+        "image": "${aws_account_id}.dkr.ecr.${region}.amazonaws.com/preprocessing:latest",
+        "vcpus": 2,
+        "memory": 4096,
+        "command": [
+            "python",
+            "preprocess.py",
+            "--input",
+            "Ref::inputFile",
+            "--output",
+            "Ref::outputFile"
+        ],
+        "environment": [
+            {
+                "name": "BENCHLING_API_KEY",
+                "value": "${benchling_api_key}"
+            }
+        ]
+    }
+}
