@@ -1,0 +1,6 @@
+AntibodyName,TimePoint_months,Temp_C,Monomer%,Potency_%_initial,pH,Appearance,Storage
+MAB001,0,5,98.2,100,6.5,Clear,2-8°C
+MAB002,3,5,97.8,98.5,6.5,Clear,2-8°C
+MAB003,6,5,97.5,97.2,6.4,Clear,2-8°C
+MAB004,0,25,98.2,100,6.5,Clear,RT
+MAB005,3,25,96.4,95.1,6.4,Clear,RT

@@ -170,12 +170,9 @@ def main():
     ml_ready_df = processor.prepare_for_ml(merged_df)
 
     # Save processed datasets
-    merged_df.to_csv('merged_antibody_data.csv', index=False)
-    ml_ready_df.to_csv('ml_ready_antibody_data.csv', index=False)
+    merged_df.to_csv('../data/merged_antibody_data.csv', index=False)
+    ml_ready_df.to_csv('../data/ml_ready_antibody_data.csv', index=False)
 
     print(f"Final dataset shape: {ml_ready_df.shape}")
     print("\nFeature names:")
     print(ml_ready_df.columns.tolist())
-
-if __name__ == '__main__':
-    main()
