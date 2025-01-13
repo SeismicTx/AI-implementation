@@ -11,6 +11,6 @@ process PREPROCESS {
 
     script:
     """
-    python /app/preprocess.py --input_dir $input_dir
+    python /app/preprocess.py --data_dir ${params.input_dir}
     """
 }
